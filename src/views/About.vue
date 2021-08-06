@@ -1,8 +1,10 @@
 <template>
-  <div class="about">
-    <img src="../assets/Profile.jpg" alt="My profile picture">
-    <section id="about-me">
-      I like data
+  <div id="about">
+    <img src="../assets/Profile.png" alt="My profile picture">
+    <section>
+      <p id="content">
+        I truly believe in the power of technology. Over 2 or 3 years ago I've written my first JavaScript code lines. It was all new to me that days, I must say - even I didn't know a thing about frameworks, frontend developement or software architecture. As time goes by, it was about time to contribute with coding the best way I could, which I did through React in a college project. It was almost one entire year using React and understang its patterns. When I leave the project, I decided to push myself realy hard in something great, and Vue.js was this choice. It's the framework I'm focusing now in.
+      </p>
     </section>
     <Footer/>
   </div>
@@ -19,16 +21,32 @@ export default {
 </script>
 
 <style>
-img {
-  width: 180px;
-  height: 250px;
-  border-radius: 50%;
+#about {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-#about-me {
-  border-right: 5px solid var(--color-text-title);
-  border-bottom: 5px solid var(--color-text-title);
-  width: 100px;
+img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  display: flex;
+  opacity: 0.5;
+  margin: 10px;
+}
+
+#about img:hover {
+  opacity: inherit;
+}
+
+section #content {
+  border-top: 1px solid var(--color-text-title);
+  border-bottom: 1px solid var(--color-text-title);
+  width: 100%;
+  padding: 15px;
+  text-align: center;
+  font-size: 12px;
 }
 </style>
