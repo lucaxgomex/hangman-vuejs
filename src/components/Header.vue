@@ -1,6 +1,6 @@
 <template>
   <header id="display-button">
-    <button>{{ description }}</button>
+    <button :class="addClass">{{ description }}</button>
   </header>
 </template>
 
@@ -8,13 +8,8 @@
 export default {
   name: 'Header',
   props: {
-    description: String
+    description: String,
+    addClass: String
   }
 }
 </script>
-
-<style media="screen">
-a {
-  text-decoration: none;
-}
-</style>

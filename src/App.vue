@@ -2,10 +2,10 @@
   <div id="app">
     <div id="nav">
       <router-link to="/">
-        <Header description="Home"/>
+        <Header class="button-class" description="Home"/>
       </router-link>
-      <router-link to="/creator">
-        <Header description="Creator"/>
+      <router-link to="/about">
+        <Header class="button-class" description="About Me"/>
       </router-link>
     </div>
     <router-view/>
@@ -19,6 +19,11 @@ export default {
   name: 'App',
   components: {
     Header
+  },
+  methods: {
+    update: function() {
+      window.location.reload()
+    }
   }
 }
 </script>
@@ -28,8 +33,15 @@ export default {
   display: flex;
   flex-direction: row;
   margin: 50px;
+  padding: 20px;
+  justify-content: center;
 }
 
+.button-class {
+  width: 100px;
+}
+
+/**
 #app {
   top: 5px;
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -38,6 +50,8 @@ export default {
   text-align: center;
   color: #2c3e50;
 }
+
+*/
 /*
 #nav a {
   font-weight: bold;

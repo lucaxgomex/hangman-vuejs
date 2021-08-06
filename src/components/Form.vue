@@ -46,5 +46,4 @@ export default {
   color: var(--color-text-dark);
   font-size: 15px;
 }
-
 </style>
