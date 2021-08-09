@@ -3,7 +3,7 @@
     <img src="../assets/Profile.png" alt="My profile picture">
     <section>
       <p id="content">
-        I truly believe in the power of technology. Over 2 or 3 years ago I've written my first JavaScript code lines. It was all new to me that days, I must say - even I didn't know a thing about frameworks, frontend developement or software architecture. As time goes by, it was about time to contribute with coding the best way I could, which I did through React in a college project. It was almost one entire year using React and understang its patterns. When I leave the project, I decided to push myself realy hard in something great, and Vue.js was this choice. It's the framework I'm focusing now in.
+        I truly believe in the power of technology. Over 2 or 3 years ago I've written my first JavaScript code lines. It was all new to me that days, I must say - even I didn't know a thing about frameworks, frontend developement or software architecture. As time goes by, it was about time to contribute with coding the best way I could, which I did through React in a college project. It was almost one entire year using React and understang its patterns. When I leave the project, I decided to push myself really hard in something great, and Vue.js was this choice. It's the framework I'm focusing now in.
       </p>
     </section>
     <Footer/>
