@@ -1,6 +1,6 @@
 <template>
   <div class="stickman-figure">
-    <img :src="`https://raw.githubusercontent.com/william-costa/wdev-hangman-game-resources/master/images/hangman/${errors}.svg`" alt="Game images">
+    <img :src="`https://raw.githubusercontent.com/lucaxgomex/hangman-vuejs/main/src/assets/images/${errors}.svg`" alt="Game assets">
   </div>
 </template>
 
