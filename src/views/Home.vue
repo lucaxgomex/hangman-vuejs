@@ -1,7 +1,7 @@
 <template>
   <div id="app-container">
     <div id="app-home">
-      <h1>Welcome to the Hangman Game!</h1>
+      <h1 v-if="definedScreen === 'start'">Welcome to the Hangman Game!</h1>
       <section v-if="definedScreen === 'start'" id="start">
         <Form v-if="step === 'word'" title="Define some word" button="Next" :action="setWord"/>
         <Form v-if="step === 'hint'" title="Define a hint" button="Start Game" :action="setHint"/>
@@ -11,7 +11,12 @@
         <Game
           :errors="errors"
           :word="word"
-          :hint="hint"/>
+          :hint="hint"
+          :validation="validation"
+          :step="step"
+          :letters="letters"
+          :play="play"
+          :playAgain="playAgain"/>
       </section>
       <Footer/>
     </div>
@@ -33,7 +38,8 @@ export default {
       step: 'word',
       word: '',
       hint: '',
-      errors: 0
+      errors: 0,
+      letters: []
     }
   },
   components: {
@@ -44,10 +50,51 @@ export default {
       this.word = word
       this.step = 'hint'
     },
+
     setHint: function(hint) {
       this.hint = hint
       this.step = 'game'
       this.definedScreen = 'game'
+    },
+
+    validation: function(letter) {
+      return this.letters.find(item => item.toLowerCase() === letter.toLowerCase())
+    },
+
+    play: function(letter) {
+      //add letter to the letters object
+      this.letters.push(letter)
+
+      this.verifyWrong(letter)
+    },
+
+    verifyWrong: function(letter) {
+      if (this.word.toLowerCase().indexOf(letter.toLowerCase()) >= 0) {
+        return this.verifyRight()
+      }
+
+      this.errors++
+
+      if (this.errors === 6) {
+        this.step = 'hanged'
+      }
+    },
+
+    verifyRight: function() {
+      let unique = [...new Set(this.word.split(''))]
+
+      if (unique.length === (this.letters.length - this.errors)) {
+        this.step = 'winner'
+      }
+    },
+
+    playAgain: function() {
+      this.word = ''
+      this.hint = ''
+      this.errors = 0
+      this.letters = 0
+      this.definedScreen = 'start'
+      this.step = 'word'
     }
   }
 }
