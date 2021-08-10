@@ -1,6 +1,6 @@
 <template>
   <header id="display-button">
-    <button :class="addClass">{{ description }}</button>
+    <button :class="addClass" name="global">{{ description }}</button>
   </header>
 </template>
 

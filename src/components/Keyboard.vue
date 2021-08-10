@@ -1,7 +1,7 @@
 <template>
   <div class="keyboard">
-    <button class="keyboard-buttom"
-      v-for="(letter, key) in 'qwertyuiopasdfghjklzxcvbnm'"
+    <button class="keyboard-button" name="keyboard"
+      v-for="(letter, key) in 'abcdefghijklmnopqrstuvw'"
       :key="key"
       :disabled="validation(letter)"
       @click="play(letter)">
@@ -28,9 +28,11 @@ export default {
   justify-content: center;
   width: 85%;
   margin-top: 20px;
+  border: 1px solid var(--color-text-light);
+  padding: 5px 0px 25px;
 }
 
-.keyboard-buttom {
+.keyboard-button {
   margin: 5px;
   text-transform: uppercase;
 }

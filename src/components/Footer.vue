@@ -17,11 +17,13 @@
   position: fixed;
   display: flex;
   justify-content: space-around;
-  bottom: 0;
-  left: 0;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  top: auto;
   width: 100%;
   text-align: center;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 a {

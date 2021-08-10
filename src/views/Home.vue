@@ -113,7 +113,7 @@ export default {
 
 @media(max-width: 600px) {
   #app-home {
-    height: 30%;
+    height: 50%;
   }
 }
 </style>

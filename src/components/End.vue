@@ -3,7 +3,7 @@
     <div :class="`end-text ${step}`">
       {{ message }}
     </div>
-    <button class="end-button" @click="playAgain">
+    <button class="end-button" name="global" @click="playAgain">
       Play Again
     </button>
   </div>

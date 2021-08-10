@@ -2,7 +2,7 @@
   <div class="formulary">
     <div class="formulary-title">{{ title }}</div>
     <input class="formulary-input" type="text" v-model="inputValue">
-    <button :disabled="inputValue.length === 0" type="button" v-on:click="onSubmit">{{ button }}</button>
+    <button :disabled="inputValue.length === 0" name="global" v-on:click="onSubmit">{{ button }}</button>
   </div>
 </template>
 

@@ -9,22 +9,19 @@
       </router-link>
     </div>
     <router-view/>
+    <Footer/>
   </div>
 </template>
 
 <script>
-import Header from './components/Header.vue'
+import Header from './components/Header'
+import Footer from './components/Footer'
 
 export default {
   name: 'App',
   components: {
-    Header
+    Header, Footer
   },
-  methods: {
-    update: function() {
-      window.location.reload()
-    }
-  }
 }
 </script>
 
@@ -32,8 +29,8 @@ export default {
 #nav {
   display: flex;
   flex-direction: row;
-  margin: 50px;
-  padding: 20px;
+  margin: 10px;
+  padding: 10px;
   justify-content: center;
 }
 

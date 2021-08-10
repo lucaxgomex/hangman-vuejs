@@ -43,14 +43,6 @@ export default {
     letters: Array,
     play: Function,
     playAgain: Function
-  },
-  data() {
-    return {
-
-    }
-  },
-  methods: {
-
   }
 }
 </script>
