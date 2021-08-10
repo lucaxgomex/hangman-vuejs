@@ -11,4 +11,7 @@ Simple hangman game created using SPA throught Vue.js. Project ideia inspired by
 - First of all, it's required to insert the word itself
 - After that, it's required some hint related to that same word
 - Then it's possible to start playing
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8dde9db9d7dee52e3d16d3608eeb6eb1436d08e0
