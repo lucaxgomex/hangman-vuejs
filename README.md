@@ -10,9 +10,8 @@ Simple hangman game created using SPA throught Vue.js. Project ideia inspired by
 - Then it's possible to start playing
 
 ## Access
-```markdown
-Click [here](https://hangman-game-vue.netlify.app/) to access the website and enjoy my finished project.
-```
+
+Click [here](https://hangman-game-vue.netlify.app/) to enter the website and enjoy my finished project.
 
 ## How to contribute to this project
 
